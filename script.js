@@ -1,26 +1,33 @@
-switch (new Date().getDay()) {
+
+    
+    
+   function dayMessage () {
+    
+    switch (new Date().getDay()) {
     case 1:
-        console.log(`Today is Monday, 5 days until Saturday!Today is Monday, 5 days until Saturday!`);
+        return "Today is Monday, oh boy.";
         break;
     case 2:
-        console.log(`Today is Monday, 4 days until Saturday!`);
+        return "Today is Tuesday, let's keep rocking to the weekend.";
         break;
     case 3: 
-        console.log(`Today is Wednesday, only 3 days until Saturday.`);
+        return "Today is Wednesday, only a few days until Saturday.";
         break;
     case 4:
-        console.log(`Today is Thursday, only 3 days until Saturday!`);
+        return "Today is Thursday, Saturday is the day after tomorrow!";
         break;
     case 5:
-        console.log(`Happy Friday, tomorrow is the weekend!`);
+        return "Happy Friday, tomorrow is SATURDAY!";
         break;
     case 6:
-      text = console.log(`It is the Weekend!!`);
+        return "Finally, it's saturday baby!!!";
       break;
     default:
-      text = console.log(`Looking forward to next Weekend`);
+        return "What a great weekend it's been. Looking forward to next weekend.";
   }
+}
 
-  
+    const welcomeString = dayMessage();
 
 
+document.getElementById('message').innerHTML = welcomeString;
