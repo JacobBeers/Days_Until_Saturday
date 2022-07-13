@@ -18,7 +18,7 @@ switch (new Date().getDay()) {
       text = console.log(`It is the Weekend!!`);
       break;
     default:
-      text = "Looking forward to next Weekend";
+      text = console.log(`Looking forward to next Weekend`);
   }
 
   
